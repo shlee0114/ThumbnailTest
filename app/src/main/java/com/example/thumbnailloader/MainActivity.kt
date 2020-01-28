@@ -21,5 +21,6 @@ class MainActivity : AppCompatActivity() {
         val displayThumbnailHeight = (displayMetrics.widthPixels /16 * 9)
 
         Glide.with(this).load(url).override(displayThumbnailWidth, displayThumbnailHeight).into(image)
+
     }
 }
