@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        r.getService().request("JNL44p5kzTk", "AIzaSyBpw3iXexye1qdYs7gmp1-et-H1f4-V5Vc","snippet,contentDetails,statistics,status").enqueue(object : Callback<model> {
+        r.getService().request("JNL44p5kzTk", "AIzaSyBpw3iXexye1qdYs7gmp1-et-H1f4-V5Vc","snippet").enqueue(object : Callback<model> {
             override fun onFailure(call: Call<model>, t: Throwable) {
                 Log.i("tt","tt")
             }
